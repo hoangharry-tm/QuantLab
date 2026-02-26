@@ -1,0 +1,29 @@
+[project]
+name = "AvellanedaStoikovMME"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.0.1",
+    "scipy>=1.17.1",
+    "yfinance>=1.2.0",
+]
+
+[tool.pyright]
+include = ["./", "src"]
+exclude = [".venv", "**/.*", "**/dist", "**/node_modules", "**/__pycache__"]
+# ignore = ["src/oldstuff"]
+# defineConstant = { DEBUG = true }
+# stubPath = "src/stubs"
+
+reportMissingTypeStubs = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownVariableType = false
+reportUnknownParameterType = false
+
+# pythonVersion = "3.6"
+# pythonPlatform = "Linux"
